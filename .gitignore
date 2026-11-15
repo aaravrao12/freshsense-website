@@ -1,0 +1,36 @@
+# secrets / tooling
+.vercel
+.env*
+.DS_Store
+.claude
+.codex
+.agents
+.mcp.json
+skills-lock.json
+
+# backups and old builds
+.backups-*
+index.backup.html
+index.legacy-single-file.html.bak
+index.pre-*.html
+
+# large raw media not served by the site
+hero-assets/
+hero-film/
+film-src/
+kit-094-earthed/
+intro-assets/
+*.mov
+FreshSenseVid.mp4
+
+# outreach data (personal info)
+linkedin-*.csv
+linkedin-*.txt
+linkedin-*.md
+apps-script/
+
+# unused stock images
+alprazolam-*.jpg
+placebo-pill-*.jpg
+download.jpeg
+tyelon.jpeg
