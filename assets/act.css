@@ -193,3 +193,17 @@ textarea.input{height:auto;min-height:110px;padding:12px 14px;resize:vertical}
 
 .only-m{display:none}
 @media(max-width:900px){.hdr.open .nav .only-m{display:block}}
+
+/* FreshSense top bar (single olive bar, split layout) */
+:root{--olive:#3f4a33;--olive-ink:#eae6d8;--sage:#a9b596}
+.topbar{background:var(--olive);color:var(--olive-ink);font-size:13px;letter-spacing:.01em}
+.topbar .wrap{display:flex;align-items:center;justify-content:space-between;gap:24px;height:40px}
+.tb-left{display:inline-flex;align-items:center;gap:10px;white-space:nowrap}
+.tb-dot{width:7px;height:7px;border-radius:50%;background:var(--sage);box-shadow:0 0 0 3px rgba(169,181,150,.25)}
+.tb-mid{opacity:.75;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.tb-right{display:inline-flex;align-items:center;gap:6px;white-space:nowrap;border-bottom:1px solid rgba(234,230,216,.45);padding-bottom:1px}
+.tb-right:hover{border-bottom-color:var(--olive-ink)}
+@media(max-width:900px){.tb-mid{display:none}.topbar{font-size:12px}}
+@media(max-width:420px){.tb-left{font-size:11px}}
+.hero{height:calc(100svh - 40px)}
+@media(max-width:900px){.hero{height:calc(100svh - 40px)}}
