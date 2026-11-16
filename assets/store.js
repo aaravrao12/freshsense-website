@@ -30,7 +30,7 @@
       if (res && res.ok) {
         form.reset();
         msg.textContent = kind === 'partner' ? 'Request received. We will reply with the roadmap and pilot data.'
-          : (res.duplicate ? 'You are already on the list. We will be in touch.' : 'You are on the list. We will email you before anything is charged.');
+          : (res.duplicate ? 'You are already on the list. We will be in touch.' : 'You are on the list. We will email you as soon as FreshSense is ready.');
         msg.className = 'msg ok';
       } else {
         msg.textContent = 'Something went wrong. Please check your details and try again, or email freshsenseai.home@gmail.com.';
